@@ -43,4 +43,4 @@ cd /opt/tomcat/bin/
 
 ./startup.sh
 
-cp /opt/Maven-Tomcat-Nexus-Sonar-Setup/target/java-tomcat-maven-example.war /opt/tomcat/webapps/
+cp /opt/Maven-Tomcat-project/target/java-tomcat-maven-example.war /opt/tomcat/webapps/
