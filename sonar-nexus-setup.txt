@@ -66,13 +66,14 @@ sudo -u sonar ./sonar.sh status
 
 #nexus
 
-vi /etc/maven/settings.xml
+vi /etc/maven/settings.xml  
 <server>
-  <id>deploymentRepo</id>        # we have to add these under pom.xml file in our project 
+  <id>deploymentRepo</id>       
   <username>admin</username> 
   <password>1d7edc68-4300-43d0-b648-assc7d4c7049fd</password>           
   
 </server>
 
+# next  we have to add the deployment id under pom.xml file in our project and the url i.e local host:8081 which is used to acess nexus 
 mvn clean deploy
 
