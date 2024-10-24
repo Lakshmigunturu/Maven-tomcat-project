@@ -32,11 +32,12 @@ ulimit -n 65536
 ulimit -u 4096
 sudo apt-get install postgresql postgresql-contrib -y
 sudo systemctl start postgresql
-systemctl enable postgresql
+sudo systemctl enable postgresql
 
 sudo -i -u postgres bash -c "psql -c \"CREATE USER sonar WITH PASSWORD 'sonar';\""
 sudo -i -u postgres bash -c "psql -c \"CREATE DATABASE sonarqube OWNER sonar;\""
 sudo -i -u postgres bash -c "psql -c \"GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;\""
+sudo systemctl daemon-reload
 
 # SonarQube Installation
 cd /opt
