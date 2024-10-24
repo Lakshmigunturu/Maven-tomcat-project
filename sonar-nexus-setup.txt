@@ -68,9 +68,9 @@ sudo -u sonar ./sonar.sh status
 
 vi /etc/maven/settings.xml
 <server>
-  <id>deploymentRepo</id>  
+  <id>deploymentRepo</id>        # we have to add these under pom.xml file in our project 
   <username>admin</username> 
-  <password>1d7edc68-4300-43d0-b648-assc7d4c7049fd</password>
+  <password>1d7edc68-4300-43d0-b648-assc7d4c7049fd</password>           
   
 </server>
 
